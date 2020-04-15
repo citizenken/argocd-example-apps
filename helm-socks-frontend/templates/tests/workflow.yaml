@@ -28,4 +28,4 @@ spec:
     container:
       image: alpine:latest
       command: [sh]
-      args: ["echo {{workflow.status}}"]
+      args: ["echo testing"]
