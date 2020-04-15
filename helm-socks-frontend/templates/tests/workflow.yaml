@@ -27,5 +27,4 @@ spec:
   - name: send-status-webhook
     container:
       image: alpine:latest
-      command: [sh]
-      args: ["echo testing"]
+      command: [echo, "{{ `{{workflow.status}}` }}"]
